@@ -11,16 +11,13 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang="en">
 	<head>
-		<BaseHead
-			title={title}
-			description={description}
-		/>
+		<BaseHead title={title} description={description} />
 	</head>
-	<body class='flex'>
-		<aside class='sticky top-0 hidden h-screen md:block'>sidebar</aside>
-		<main class='w-full'>
+	<body class="flex">
+		<aside class="sticky top-0 hidden h-screen md:block">sidebar</aside>
+		<main class="w-full">
 			<slot />
 		</main>
 	</body>
