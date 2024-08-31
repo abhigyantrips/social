@@ -5,8 +5,9 @@ export const collections = {
 		type: 'data',
 		schema: ({ image }) =>
 			z.object({
-				images: z.array(image()),
 				caption: z.string(),
+				date: z.coerce.date(),
+				images: z.array(image()),
 			}),
 	}),
 };
